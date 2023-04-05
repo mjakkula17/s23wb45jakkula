@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  - let results = [{earphones_color:"White",earphones_length:"12m",earphones_cost:"$55", earphones_sides:"Equal"},{earphones_color:"Green",earphones_length:"19m",earphones_cost:"$100", earphones_sides:"Not Equal"},{earphones_color:"Red",earphones_length:"15m",earphones_cost:"$70", earphones_sides:"Equal"}]
+  div(class="container-fluid")
+    div(class="row")
+      each item,index in results
+        div(class="col-sm-2",onClick=`buy(${index})`)
+          p Color is #{item.earphones_color}
+          p Length is #{item.earphones_length}
+          p Cost is #{item.earphones_cost}
+          p Sides are #{item.earphones_sides}
