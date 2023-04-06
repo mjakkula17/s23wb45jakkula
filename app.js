@@ -8,8 +8,8 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 var earphonesRouter = require('./routes/earphones');
-var boardRouter = require('./routes/users');
-var selectorRouter = require('./routes/users');
+var boardRouter = require('./routes/board');
+var selectorRouter = require('./routes/selector');
 
 var app = express();
 
